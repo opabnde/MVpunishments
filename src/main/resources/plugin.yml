@@ -1,0 +1,17 @@
+name: MVpunishments
+version: 1.0.0
+main: de.opbande.mvpunishments.MVpunishments
+description: Ein professionelles Bestrafungssystem für OPBANDE
+authors:
+  - OPBANDE
+
+commands:
+  punish:
+    description: Bestraft einen Spieler
+    usage: /punish <Spielername> <Grund>
+  punship:
+    description: Bannt die IP eines Spielers permanent
+    usage: /punship <Spielername>
+  looking:
+    description: Zeigt alle Bestrafungen eines Spielers
+    usage: /looking <Spielername>

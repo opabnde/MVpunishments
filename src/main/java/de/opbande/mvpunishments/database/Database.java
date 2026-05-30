@@ -90,7 +90,7 @@ public class Database {
         Bukkit.getScheduler().runTaskTimerAsynchronously(plugin, () -> {
             for (List<Punishment> pList : punishments.values()) {
                 for (Punishment p : pList) {
-                    if (!p.isPermanent() && !p.isActive() && p.getRemainingMillis() < 0) {
+                    if (!p.getReason().isPermanent() && !p.isActive() && p.getRemainingMillis() < 0) {
                         p.setActive(false);
                     }
                 }
